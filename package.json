@@ -1,0 +1,28 @@
+{
+  "name": "common-structures",
+  "version": "1.0.0",
+  "description": "Mini package that offers documentation and a class to create new option/result/other common structures objects in a standardized way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": {
+    "name": "Robert Dumitrescu",
+    "email": "robertdum01@gmail.com",
+    "url": "http://rdumitrescu.com"
+  },
+  "bugs": {
+    "url": "https://github.com/robertdumitrescu/common-structures/issues"
+  },
+  "homepage": "https://github.com/robertdumitrescu/common-structures#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertdumitrescu/common-structures.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
