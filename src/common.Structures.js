@@ -3,8 +3,10 @@
 /**
  * @typedef {Object} CommonOptions
  * @property {*} input - The input of method.
- * @property {*} returnOutput - If this is on true, the function, instead of returning the {@link CommonResult} object, it will return directly the output ${@link CommonResult.output}
- * @property {Boolean} logging - If this is on true, logging will be offered for debugging purposes
+ * @property {Boolean} returnOutput - If this is on true, the function, instead of returning the {@link CommonResult} object, it will return directly the output ${@link CommonResult.output}
+ * @property {Boolean} returnLogs - If this is on true, it will only the array with the logs and the end instead of returning the LogsCollector object (the transient state of logging-services) ${@link LogsCollector}
+ * @property {Boolean} logging - If this is on true, logging will enabled and will be offered for debugging purposes
+ * @property {LogsCollector} logs - If this is passed, the new logs from the method (if logging is enabled ${@link CommonOptions.logging}), will be appended to to this object instead of initializing a new one
  * */
 
 /**
@@ -29,6 +31,7 @@ class CommonStructures {
     /** @type {CommonOptions} */
         return {
             returnOutput: false,
+            returnLogs: false,
             logging: false,
         }
     }
